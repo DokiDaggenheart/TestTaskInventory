@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e77a9421f4db09439ad02849341f11e, type: 3}
+  m_Name: ItemsConfig
+  m_EditorClassIdentifier: 
+  items:
+  - ID: 0
+    Name: Gold
+    ItemType: 0
+    Icon: {fileID: -514206854, guid: 9966c02134c390a46b1a34ef7bb3c72d, type: 3}
+    StackLimit: 750
+  - ID: 1
+    Name: Wood
+    ItemType: 0
+    Icon: {fileID: -564605834, guid: 9966c02134c390a46b1a34ef7bb3c72d, type: 3}
+    StackLimit: 10
+  - ID: 2
+    Name: Ore
+    ItemType: 0
+    Icon: {fileID: 152031051, guid: 9966c02134c390a46b1a34ef7bb3c72d, type: 3}
+    StackLimit: 5
+  - ID: 50
+    Name: Beaver
+    ItemType: 1
+    Icon: {fileID: -282959316, guid: 9966c02134c390a46b1a34ef7bb3c72d, type: 3}
+    StackLimit: 3
+  - ID: 51
+    Name: Frog
+    ItemType: 1
+    Icon: {fileID: -1275831508, guid: 9966c02134c390a46b1a34ef7bb3c72d, type: 3}
+    StackLimit: 3
+  - ID: 52
+    Name: Kitty
+    ItemType: 1
+    Icon: {fileID: -1319623134, guid: 9966c02134c390a46b1a34ef7bb3c72d, type: 3}
+    StackLimit: 3
+  - ID: 100
+    Name: Potion
+    ItemType: 2
+    Icon: {fileID: -1179520015, guid: 9966c02134c390a46b1a34ef7bb3c72d, type: 3}
+    StackLimit: 2
+  - ID: 101
+    Name: Bomb
+    ItemType: 2
+    Icon: {fileID: 154001412, guid: 9966c02134c390a46b1a34ef7bb3c72d, type: 3}
+    StackLimit: 1
