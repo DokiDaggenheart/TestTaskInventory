@@ -1,4 +1,4 @@
-using System.Collections;
+using Zenject;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +6,7 @@ public class InventoryView : MonoBehaviour
 {
     [SerializeField] private Transform contentParent;
     [SerializeField] private GameObject slotPrefab;
+    [Inject] private InventoryDragService _dragService;
 
     private List<InventorySlotView> _views = new();
 
@@ -14,6 +15,8 @@ public class InventoryView : MonoBehaviour
         for (int i = 0; i < slotCount; i++)
         {
             var obj = Instantiate(slotPrefab, contentParent);
+            var slotView = obj.GetComponent<InventorySlotView>();
+            slotView.Init(i, _dragService);
             _views.Add(obj.GetComponent<InventorySlotView>());
         }
     }

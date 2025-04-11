@@ -14,7 +14,7 @@ public class InventoryModel
             Slots.Add(new InventorySlot());
     }
 
-    public void AddItem(ItemData data, int count, AnimalState? state = null)
+    public void AddItem(ItemData data, int count, AnimalState? state = AnimalState.Healthy)
     {
         while (count > 0)
         {
@@ -36,6 +36,19 @@ public class InventoryModel
                 count -= toAdd;
             }
         }
+    }
+
+    public void SwapItems(int indexA, int indexB)
+    {
+        if (indexA < 0 || indexA >= Slots.Count || indexB < 0 || indexB >= Slots.Count)
+            return;
+
+        var temp = Slots[indexA].Item;
+        Slots[indexA].Item = Slots[indexB].Item;
+        Slots[indexB].Item = temp;
+
+        Debug.Log("first Slot " + Slots[indexA].Item);
+        Debug.Log("second Slot " + Slots[indexB].Item);
     }
 
     private InventorySlot FindStackableSlot(ItemData data, AnimalState? state)

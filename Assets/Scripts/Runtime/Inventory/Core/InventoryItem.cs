@@ -1,6 +1,4 @@
-using UnityEngine;
-
-public class InventoryItem : MonoBehaviour
+public class InventoryItem
 {
     public ItemData Data;
     public int Count;
